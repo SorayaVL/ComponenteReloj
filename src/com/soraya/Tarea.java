@@ -1,32 +1,36 @@
 package com.soraya;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Tarea {
-    String Texto;
+    String descripcion;
     Date hora;
 
-    public String getTexto() {
-        return Texto;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setTexto(String texto) {
-        Texto = texto;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public Date getHora() {
+    public Date getHoraSinFormato() {
         return hora;
+    }
+
+    public String getHora(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss");
+        String horaFormateada = simpleDateFormat.format(getHoraSinFormato());
+        return horaFormateada;
     }
 
     public void setHora(Date hora) {
         this.hora = hora;
     }
 
-    public Tarea() {
-    }
-
-    public Tarea(String texto, Date hora) {
-        Texto = texto;
+    public Tarea(String descripcion, Date hora) {
+        this.descripcion = descripcion;
         this.hora = hora;
     }
 }

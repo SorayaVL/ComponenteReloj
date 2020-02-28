@@ -6,10 +6,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class PantallaPrueba extends Application {
     @Override
