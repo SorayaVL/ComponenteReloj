@@ -33,4 +33,9 @@ public class Tarea {
         this.descripcion = descripcion;
         this.hora = hora;
     }
+
+    @Override
+    public String toString() {
+        return descripcion;
+    }
 }

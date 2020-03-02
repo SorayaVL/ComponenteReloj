@@ -63,9 +63,8 @@ public class PantallaController implements Initializable {
         reloj.registrarTarea(tarea);
         reloj.addSettingAlarm(new SettingAlarm() {
             @Override
-            public void ejecuta() {
-
-                System.out.println(tfTexto.getText());
+            public void ejecuta(String descripcion) {
+                System.out.println(descripcion);
             }
         });
 
