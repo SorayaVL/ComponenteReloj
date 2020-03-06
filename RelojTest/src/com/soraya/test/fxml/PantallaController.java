@@ -63,8 +63,8 @@ public class PantallaController implements Initializable {
         reloj.registrarTarea(tarea);
         reloj.addSettingAlarm(new SettingAlarm() {
             @Override
-            public void ejecuta(String descripcion) {
-                System.out.println(descripcion);
+            public void ejecuta(Tarea tarea) {
+                System.out.println(tarea);
             }
         });
 
